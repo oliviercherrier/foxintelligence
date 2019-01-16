@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgxJsonViewerModule } from 'ngx-json-viewer';
+import { FileDropModule } from 'ngx-file-drop';
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +10,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxJsonViewerModule,
+    FileDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
